@@ -1,0 +1,54 @@
+/* ======== Reset ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ======== Colors ======== */
+:root {
+  --main-bg-color: #000022;
+  --primary-txt-color: #a99a6f;
+}
+/* ======== Fonts ======== */
+@font-face {
+  font-family: Behistun;
+  src: url("../behistun-font/Behistun-J8dE.ttf");
+}
+/* ======== Body defaults ======== */
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: var(--main-bg-color);
+  min-height: 100vh;
+  color: var(--primary-txt-color);
+}
+/* ======== Logo ======== */
+.main-logo {
+  width: 25vw;
+  min-width: 200px;
+  max-width: 250px;
+  margin: 30px auto;
+}
+.title {
+  font-family: Behistun;
+}
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+
