@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======== Colors ======== */
+:root {
+  --primary-color: #000022;
+  --secondary-color: hsl(44, 25%, 55%);
+  --tertiary-color: #ffffdd;
+  --primary-font-family: 'Courier New', Courier, monospace
+}
+
+/* ======== Body defaults ======== */
+body {
+  background: var(--primary-color);
+  min-height: 100vh;
+  color: var(--secondary-color);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/* ======== ancient font ======== */
+@font-face {
+  font-family: ancient;
+  src: url(../khosrau-font/Khosrau-040P.ttf);
+}
+
+/* ======== Logo ======== */
+.header-logo {
+  width: 25vw;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 20px;
+}
+
+/* Title */
+.title {
+  font-size: 1.7rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--tertiary-color);
+  margin-bottom: 10px;
+}
+
+/* ======== Main ======== */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  font-weight: 900;
+  min-height: 100vh;
+}
+/* ======== Food recipe container ======== */
+.food-recipe-container {
+  width: 85vw;
+  max-width: 1100px;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+  border-radius: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 300px;
+  box-shadow: 8px 8px 100px #ffffdd8e;
+}
+/* ======== Food image ======== */
+.food-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50px 50px 0 0;
+  background:linear-gradient(#00002268,#0000229d), url("../images/chicken-kebabs-recipe.jpg") no-repeat center;
+  background-size: cover;
+}
+/* ======== Food description ======== */
+.food-description {
+  margin: 0 20px;
+}
+/* ======== Food name ======== */
+.food-name {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+}
+/* ======== Ingredient-instruction ======== */
+summary {
+  font-size: 40px;
+  color: var(--tertiary-color);
+  padding-bottom: 10px;
+  padding-top: 15px;
+  text-align:center
+}
+.content {
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(#00002268,#0000229d),url(../images/ingredient.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  line-height: 30px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+h4 {
+  font-size: 25px;
+  color: var(--secondary-color);
+  margin: 20px 0;
+}
+li {
+  list-style-position: inside;
+}
+/* ======== mobile devices ======== */
+@media only screen and (max-width: 600px) {
+  .food-recipe-container{
+    width: 100vw;
+    border-radius:0px;
+  }
+  .food-img{
+    border-radius: 0;
+  }
+}
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */
+/* ========  ======== */

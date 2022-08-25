@@ -1,1 +1,0 @@
-let btn = document.getElementsByClassName('recipes-btn');

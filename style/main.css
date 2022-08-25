@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ======== Colors ======== */
+:root {
+  --primary-color: #000022;
+  --secondary-color: hsl(44, 25%, 55%);
+  --tertiary-color: #ffffdd;
+  --primary-font-family: "Courier New", Courier, monospace;
+}
+/* ======== Body defaults ======== */
+body {
+  background: var(--primary-color);
+  min-height: 100vh;
+  color: var(--secondary-color);
+}
+header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+/* ======== Persian ancient font ======== */
+@font-face {
+  font-family: ancient;
+  src: url(../khosrau-font/Khosrau-040P.ttf);
+}
+/* ======== Logo ======== */
+.header-logo {
+  width: 25vw;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 20px;
+}
+.title {
+  font-size: 1.7rem;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--tertiary-color);
+  margin-bottom: 10px;
+}
+/* ======== Recipes start ======== */
+.Recipe img {
+  width: 100%;
+  height: 65%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.Recipe {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  width: 300px;
+  height: 320px;
+  border-radius: 20px;
+  color: var(--tertiary-color);
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: var(--primary-font-family);
+  font-weight: bold;
+  position: relative;
+  transition: 1s;
+}
+
+/* Using after for hover effects */
+.Recipe::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "hey there";
+  padding-top: 25%;
+  font-size: 20px;
+  color: var(--primary-color);
+  width: 100%;
+  height: 42%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  order: 100;
+  background: var(--tertiary-color);
+  opacity: 0;
+  transition: 1s;
+  font-family: ancient;
+  font-size: 25px;
+}
+.Recipe:hover::after {
+  opacity: 0.7;
+}
+.Recipe:nth-child(1)::after {
+  content: "Fesenjan";
+}
+.Recipe:nth-child(2)::after {
+  content: "chicken";
+}
+.Recipe:nth-child(3)::after {
+  content: "saffron";
+}
+/* Recipe cards container */
+.Recipes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  margin-inline: 30px;
+}
+
+/* Cards title */
+.food-title {
+  font-family: ancient-persian, "Courier New", Courier, monospace;
+}
+
+.food-description {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.fa-star {
+  width: 8px;
+  margin-bottom: 17px;
+}
+/* These Buttons are actually links to Recipes*/
+.recipe-button {
+  display: inline-block;
+  padding: 10px;
+  background: var(--primary-color);
+  box-shadow: 0px 0px 0px red inset;
+  border-bottom: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  position: relative;
+  top: 5px;
+  font-weight: 900;
+  transition: all 0.5s;
+}
+.recipe-button:hover {
+  transform: scale(1.1);
+  color: var(--primary-color);
+  background: var(--tertiary-color);
+}
+.recipe-button:focus {
+  background: var(--tertiary-color);
+  color: hsl(44, 25%, 55%);
+  transform: scale(0.95);
+}
+.Recipe:hover {
+  box-shadow: 8px 8px 5px #ffffdd8e;
+  transform: scale(1.1);
+}
+/* ======== Recipes end ======== */
