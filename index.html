@@ -5,31 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Css link -->
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <!-- Icon -->
     <link rel="icon" href="images/farvahar.png" />
-    <!-- Font -->
-    
-    <title>Document</title>
+    <title>Persian Recipes</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- ======== header start ======== -->
+    <header>
+      <figure>
+        <!-- Main logo -->
+        <img
+          src="images/faravahar.png"
+          alt="Farvahar"
+          class="header-logo"
+          title="persian god"
+        />
+        <figcaption>
+          <h1 class="title">Persian Food Recipes</h1>
+        </figcaption>
+      </figure>
+    </header>
+    <!-- ======== header end ======== -->
     <main>
-      <!-- ======== Start header ======== -->
-      <header>
-        <figure>
-          <!-- Main logo -->
-          <img
-            src="images/faravahar.png"
-            alt="Farvahar"
-            class="main-logo"
-            title="persian god"
-          />
-          <figcaption>
-            <h1 class="title">Persia</h1>
+      <!-- ======== Recipes start ======== -->
+      <article class="Recipes">
+        <!-- First Recipe -->
+        <figure class="Recipe">
+          <!-- Food image -->
+          <img src="images/fesenjan.jpg" alt="fesenjan" />
+          <figcaption class="food-description">
+            <!-- Food title -->
+            <h2 class="food-name">Fesenjan</h2>
+            <section>
+              <!-- Stars -->
+              <p class="stars">
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+              </p>
+              <!-- Recipe button -->
+              <a class="recipe-button" href="recipes/Fesenjan.html">Recipe</a>
+            </section>
           </figcaption>
         </figure>
-      </header>
-      <!-- ======== end header ======== -->
+        <!-- Second Recipe -->
+        <figure class="Recipe">
+          <!-- Food image -->
+          <img
+            src="images/persian-chicken-kebabs.jpg"
+            alt="persian chicken kebab"
+          />
+          <figcaption class="food-description">
+            <!-- Food title -->
+            <h2 class="food-name">Chicken kebab</h2>
+            <section>
+              <!-- Stars -->
+              <p class="stars">
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+              </p>
+              <!-- Recipe button -->
+              <a class="recipe-button" href="recipes/chicken-kebab.html"
+                >Recipe</a
+              >
+            </section>
+          </figcaption>
+        </figure>
+        <!-- Third Recipe -->
+        <figure class="Recipe">
+          <!-- food image -->
+          <img src="images/persian-saffron.jpg" alt="persian saffron" />
+          <figcaption class="food-description">
+            <!-- food title -->
+            <h2 class="food-name">Saffron</h2>
+            <section>
+              <!-- stars -->
+              <p class="stars">
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+                <i class="fa-solid fa-star fa-sm"></i>
+              </p>
+              <!-- Recipe button -->
+              <a class="recipe-button" href="recipes/saffron.html">Recipe</a>
+            </section>
+          </figcaption>
+        </figure>
+      </article>
+      <!-- ======== Recipes end ======== -->
+      <script src="app.js"></script>
     </main>
   </body>
 </html>
