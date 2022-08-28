@@ -28,16 +28,15 @@ header {
 }
 /* ======== Logo ======== */
 .header-logo {
-  width: 25vw;
+  width: 20vw;
   min-width: 200px;
   max-width: 300px;
-  margin: 20px;
+  margin: 15px;
 }
 .title {
   font-size: 1.7rem;
   font-family: "Courier New", Courier, monospace;
   color: var(--tertiary-color);
-  margin-bottom: 10px;
 }
 /* ======== Recipes start ======== */
 .Recipe img {
@@ -49,8 +48,8 @@ header {
 .Recipe {
   background: var(--secondary-color);
   color: var(--primary-color);
-  width: 300px;
-  height: 320px;
+  width: 250px;
+  height: 270px;
   border-radius: 20px;
   color: var(--tertiary-color);
   font-size: 0.8rem;
@@ -101,6 +100,7 @@ header {
   margin-top: 30px;
   flex-wrap: wrap;
   margin-inline: 30px;
+  margin-bottom: 50px;
 }
 
 /* Cards title */
