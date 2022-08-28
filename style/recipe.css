@@ -112,6 +112,29 @@ h4 {
 li {
   list-style-position: inside;
 }
+
+/* ======== back button ======== */
+.back-button,.back-button:visited{
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  margin-top: 60px;
+  text-decoration: none;
+  transition:.5s;
+}
+.back-button:focus{
+  color: var(--primary-color);
+}
+.back-button:hover {
+  background: var(--secondary-color);
+  color:var(--tertiary-color);
+}
 /* ======== mobile devices ======== */
 @media only screen and (max-width: 600px) {
   .food-recipe-container{
@@ -120,6 +143,12 @@ li {
   }
   .food-img{
     border-radius: 0;
+  }
+  .food-recipe-container {
+    margin-top: -900px !important;
+  }
+  main {
+    min-height: 50vh;
   }
 }
 /* ========  ======== */
